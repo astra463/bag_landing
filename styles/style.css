@@ -1,0 +1,361 @@
+.header {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: aliceblue;
+	padding: 30px 45px 0;
+	height: 100vh;
+	background-image: url('../images/bg-image.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header__menu {
+
+}
+
+.header__menu__list {
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+	padding-inline-start: 60px;
+	gap: 32px;
+	color: #1E1E1E;
+	font-family: Rubik;
+	font-size: 20px;
+}
+
+.header__menu__list-item {
+	font-family: var(--main-font);
+	font-variation-settings: "wght" 400;
+}
+
+.header__content {
+	justify-self: flex-start;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__title {
+	color: #1E1E1E;
+	font-family: "Inter-Variable";
+	font-size: 90px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.header__description {
+	padding-top: 10px;
+	font-family: "OpenSans-Variable";
+	color: #1E1E1E;
+	font-size: 18px;
+	font-weight: 400;
+	border-top: 1px solid #1E1E1E;
+	padding-bottom: 20px;
+}
+
+.header__action-button {
+	background-color: transparent;
+	min-width: 330px;
+	min-height: 60px;
+	border: 1px solid #1E1E1E;
+	color: #1E1E1E;
+	font-family: "OpenSans-Variable";
+	font-size: 20px;
+	font-weight: 400;	
+	text-transform: uppercase;
+	padding: 20px 40px;
+}
+
+.page {
+	background-color: #fefefe;
+	padding: 0 125px 0;
+	color: #1e1e1e;
+}
+
+.page__section-title {
+	padding: 65px 0 60px;
+	color: #172432;
+	text-align: center;
+	font-family: "Inter-Variable";
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.page__section-picture {
+	max-height: 744px;
+	object-fit: contain;
+	width: 100%;
+}
+
+.cards-list {
+	position: relative;
+	display: flex;
+}
+
+.line {
+	position: relative;
+	height: 70px;
+}
+
+.card {
+	position: relative;
+	background-color: transparent;
+	border: 1px solid black;
+	width: 648px;
+	height: 722px;
+	right: 50px;
+	top: 30px;
+	margin-right: -50px;
+	box-shadow: 4px 4px 0px 0px #000;
+}
+
+.line::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 205px;
+	height: 1px;
+	background-color: #000;
+	right: 0px;
+	top: 50px;
+}
+
+.card__title {
+	font-family: "AbhayaLibre";
+	color: black;
+	font-size: 50px;
+	font-weight: 600;
+	text-align: end;
+	padding-inline-end: 25px;
+}
+
+.card__features-list {
+	display: flex;
+	flex-direction: column;
+	padding: 15% 0 0 20%;
+}
+
+.feature-icon {
+	width: 50px;
+}
+
+.feature-description {
+	color: #1E1E1E;
+	font-family: "Inter-Variable";
+	font-size: 30px;
+	font-variation-settings: "wght" 200;
+}
+
+.card__features-list-item {
+	display: flex;
+	gap: 45px;
+	align-items: center;
+}
+
+.page__gallery-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 65px;
+}
+
+.gallery {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 490px);
+	padding-bottom: 65px;
+}
+
+.gallery-item-one {
+	grid-column-start: 1;
+	min-height: 490px;
+}
+
+.gallery-item-two {
+	grid-column-start: 1;
+	grid-row: 2 / 4;
+}
+
+.gallery-item-three {
+	grid-row: 1 / span 2;
+	grid-column-start: 2;
+}
+
+.gallery-item-four {
+	grid-column-start: 2;
+	grid-row-start: 3;
+}
+
+.gallery-image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.section__action-button {
+	background-color: transparent;
+	min-width: 495px;
+	min-height: 60px;
+	border: 1px solid #1E1E1E;
+	color: #1E1E1E;
+	font-family: "OpenSans-Variable";
+	font-size: 20px;
+	font-weight: 400;	
+	text-transform: uppercase;
+	padding: 20px 40px;
+	grid-row-start: 2;
+}
+
+.page__product-reviews {
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-template-columns: 40% 60%;
+  min-height: 530px;
+}
+
+.section__group {
+	background-image: url("../images/bg_faq.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page__product-reviews-rating,
+.up-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	flex-direction: column;
+	justify-self: end;
+}
+
+.product-rating,
+.product-paragraph {
+  color: #fff;
+  font-family: "Inter-Variable";
+  text-align: center;
+  font-variation-settings: "wght" 700;
+}
+
+.product-rating {
+  font-size: 4rem;
+  line-height: 1;
+	font-size: 250px;
+}
+
+.product-paragraph {
+  grid-column-start: 2;
+  justify-self: center;
+  align-self: center;
+  font-size: 120px;
+
+}
+
+.star-box {
+  width: 210px; /* Ширина звездной оценки */
+  display: flex;
+	gap: 15px;
+  justify-content: space-between;
+}
+
+.star-icon {
+  width: 50px;
+  background-image: url('svg/star.svg#star');
+  /* Дополнительные стили для позиционирования звезды можно добавить здесь */
+}
+
+.rating-button {
+  color: #fff;
+  min-width: 38rem;
+	font-family: "Inter-Variable";
+	font-variation-settings: "wght" 700;
+  font-size: 1.7rem;
+	box-shadow: 0px 0px 20px 10px
+}
+
+.button-container {
+  grid-column: 1 / 3;
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+	color: black;
+}
+ 
+.faq__title {
+	font-family: "Inter-Variable";
+	font-variation-settings: "wght" 700;
+	color: #fefefe;
+	font-size: 150px;
+	padding: 20px 30px 80px;
+}
+
+details {
+	padding: 10px 50px 10px 80px;
+  background-color: transparent;
+  border: 1px solid transparent;
+	color: #fefefe;
+  margin-bottom: 1em;
+	font-family: "Inter-Variable";
+	font-variation-settings: "wght" 200;
+	font-size: 40px;
+}
+ 
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+details[open] {
+  background-color: transparent;
+}
+
+.faq__paragraph {
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+
+.footer {
+	min-height: 360px;
+	display: flex;
+	justify-content: space-between;
+	padding: 132px 32px 32px;
+	align-items: center;
+}
+
+.footer__title {
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: "Inter-Variable";
+	font-variation-settings: "wght" 700;
+	font-size: 70px;
+	align-self: flex-start;
+}
+
+.footer__menu-list,
+.footer__social-list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	color: #FFF;
+font-family: "Rubik-Variable";
+font-size: 18px;
+font-variation-settings: "wght" 400;
+align-self: flex-start;
+}
+
+.bold {
+	font-size: 24px;
+	padding-bottom: 10px;
+	font-variation-settings: "wght" 500;
+}
+
+.copy {
+	text-align: center;
+	font-size: 12px;
+}
