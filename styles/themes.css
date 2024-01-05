@@ -1,0 +1,24 @@
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --bg-color: #fff;
+    --header-button-color: #000;
+    --color: #000;
+    --button-animate-color: #000;
+    --button-text-color: #fff;
+    --header-button-bg-color: whitesmoke;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --bg-color: #000814;
+    --header-color: #000;
+    --header-button-color: #fff;
+    --color: #fff;  
+    --button-animate-color: #fff;
+    --button-text-color: #000;
+    --header-button-bg-color: #000814;
+  }
+}

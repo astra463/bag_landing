@@ -16,8 +16,8 @@
     <meta property="og:locale" content="язык_страна" />
 
     <title>Revoldi</title>
-    <link rel="icon" href="images/favicon.ico" sizes="any" />
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="svg/letter-r-svgrepo-com.ico" sizes="any" />
+    <link rel="icon" href="svg/letter-r-svgrepo-com.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/mobile-icon.png" />
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/variables.css" />
@@ -25,16 +25,15 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/animations.css" />
     <link rel="stylesheet" href="styles/themes.css" />
-    <script src="scripts/set-theme.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="section_main">
       <nav class="header__menu">
         <ul class="header__menu__list">
-          <li class="header__menu__list-item">Главная</li>
-          <li class="header__menu__list-item">Модели</li>
-          <li class="header__menu__list-item">Вопрос/Ответ</li>
-          <li class="header__menu__list-item">Контакты</li>
+          <li class="header__menu__list-item"><a href="#section_main">Главная</a></li>
+          <li class="header__menu__list-item"><a href="#section_models">Модели</a></li>
+          <li class="header__menu__list-item"><a href="#section_faq">Вопрос/Ответ</a></li>
+          <li class="header__menu__list-item"><a href="#section_contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__content">
@@ -42,11 +41,13 @@
         <p class="header__description">
           Легкость стиля, надежность в каждом шаге
         </p>
-        <button class="header__action-button">купить на wildberries</button>
+        <a href="https://www.wildberries.ru/brands/37574462-REVOLDI?utm_source=vkentryprofit&click_id=v1_1053249462" target="_blank" class="button header__action-button">          
+          <span class="button__text">купить на wildberries</span>
+        </a>
       </div>
     </header>
     <main class="page">
-      <section class="page__section">
+      <section class="page__section" id="section_models">
         <h3 class="page__section-title">
           Классика или Спорт? Выбери свой стиль!
         </h3>
@@ -89,7 +90,6 @@
                   </svg>
                   <p class="feature-description">Водостойкая поверхность</p>
                 </li>
-                <li class="line"></li>
               </ul>
             </article>
           </li>
@@ -119,12 +119,14 @@
             />
           </li>
         </ul>
-        <button class="section__action-button">купить на wildberries</button>
+        <a href="https://www.wildberries.ru/catalog/137716293/detail.aspx" target="_blank" class="button section__action-button">
+          <span class="button__text">купить на wildberries</span>
+        </a>
       </section>
       <section class="page__section">
-        <ul class="cards-list">
+        <ul class="cards-list sport-section">
           <li class="cards-list__item">
-            <article class="card">
+            <article class="card card-second">
               <h3 class="card__title">sport</h3>
               <ul class="card__features-list">
                 <li class="card__features-list-item">
@@ -154,13 +156,12 @@
                   </svg>
                   <p class="feature-description">Есть отсек для обуви</p>
                 </li>
-                <li class="line"></li>
               </ul>
             </article>
           </li>
           <li class="cards-list__item">
             <img
-              src="/images/classic_bag.jpg"
+              src="/images/sport_bag.jpeg"
               alt=""
               class="page__section-picture"
             />
@@ -171,31 +172,33 @@
         <h3 class="page__section-title">Познакомьтесь ближе</h3>
         <ul class="gallery">
           <li class="gallery-item-one">
-            <img src="./images/bag_close.jpeg" alt="" class="gallery-image" />
+            <img src="./images/sport_bag_close_1.jpeg" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item-two">
-            <img src="./images/bag_girl.jpeg" alt="" class="gallery-image" />
+            <img src="./images/sport_bag_girl.jpeg" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item-three">
             <img
-              src="./images/bag_girl_tshirt.jpeg"
+              src="./images/sport_bag_shoes.jpeg"
               alt=""
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-four">
             <img
-              src="./images/bag_close_hands.jpeg"
+              src="./images/sport_bag_close_2.png"
               alt=""
               class="gallery-image"
             />
           </li>
         </ul>
-        <button class="section__action-button">купить на wildberries</button>
+        <a href="https://www.wildberries.ru/catalog/171102759/detail.aspx?targetUrl=EX" target="_blank" class="button section__action-button">
+          <span class="button__text">купить на wildberries</span>
+        </a>
       </section>
     </main>
     <div class="section__group">
-    <section class="faq">
+    <section class="faq" id="section_faq">
       <h2 class="faq__title">Частые вопросы</h2>
       <details>
         <summary>Сколько карманов имеет сумка?</summary>
@@ -231,12 +234,10 @@
       </div>
       <p class="product-paragraph">3400+ отзывов</p>
       <div class="button-container">
-        <button class="section__action-button rating-button">
-          перейти на wildberries
-        </button>
+        <a href="https://www.wildberries.ru/brands/37574462-REVOLDI?utm_source=vkentryprofit&click_id=v1_1053249462" target="_blank" class="section__rating-button">перейти на wildberries</a>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="section_contacts">
       <h2 class="footer__title">revoldi</h2>
       <ul class="footer__menu-list">
         <li class="footer__menu-list-item bold">Меню</li>
@@ -268,5 +269,7 @@
     </footer>
     <p class="copy">&copy; 2023 SHILOV x REVOLDI</p>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
   </body>
 </html>

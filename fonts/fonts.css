@@ -1,33 +1,33 @@
 @font-face {
   font-display: swap;
-  font-family: "Rubik-Variable";
+  font-family: Rubik-Variable;
   font-weight: 400 785;
   src: local("Rubik-Variable.ttf"),
-    url("./Rubik-Variable.ttf") format("truetype-variations"),
-    url("./Rubik-Variable.ttf") format("ttf-variations");
+    url(./Rubik-Variable.ttf) format("truetype-variations"),
+    url(./Rubik-Variable.ttf) format("ttf-variations");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Inter-Variable";
+  font-family: Inter-Variable;
   font-weight: 400 785;
   src: local("Inter-Variable.woff2"),
-    url("./Inter-Variable.woff2") format("woff2 supports variations"),
-    url("./Inter-Variable.woff2") format("woff2-variations");
+    url(./Inter-Variable.woff2) format("woff2 supports variations"),
+    url(./Inter-Variable.woff2) format("woff2-variations");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "OpenSans-Variable";
+  font-family: OpenSans-Variable;
   font-weight: 400 785;
   src: local("OpenSans-Variable.ttf"),
-    url("./OpenSans-Variable.ttf") format("truetype-variations"),
-    url("./OpenSans-Variable.ttf") format("ttf-variations");
+    url(./OpenSans-Variable.ttf) format("truetype-variations"),
+    url(./OpenSans-Variable.ttf) format("ttf-variations");
 }
 
 @font-face {
   font-display: swap;
-  font-family: "AbhayaLibre";
+  font-family: AbhayaLibre;
   src: local("AbhayaLibre-SemiBold.ttf"),
-    url("./AbhayaLibre-SemiBold.ttf") format("truetype");
+    url(./AbhayaLibre-SemiBold.ttf) format("truetype");
 }
