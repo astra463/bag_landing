@@ -19,20 +19,6 @@
     <link rel="icon" href="svg/letter-r-svgrepo-com.ico" sizes="any" />
     <link rel="icon" href="svg/letter-r-svgrepo-com.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/mobile-icon.png" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/globals.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
-    <link rel="stylesheet" href="styles/themes.css" />
-    <link rel="stylesheet" href="blocks/card/card.css" />
-    <link rel="stylesheet" href="blocks/cards_section/cards_section.css" />
-    <link rel="stylesheet" href="blocks/header/header.css" />
-    <link rel="stylesheet" href="blocks/footer/footer.css" />
-    <link rel="stylesheet" href="blocks/footer/star-icon.css" />
-    <link rel="stylesheet" href="blocks/gallery/gallery-section.css" />
-    <link rel="stylesheet" href="blocks/page/page.css" />
-    <link rel="stylesheet" href="blocks/product-reviews/product-reviews.css" />
   </head>
   <body>
     <header class="header" id="section_main">
@@ -68,27 +54,28 @@
     </header>
     <main class="page">
       <section class="page__section">
-        <ul class="page__section-list places__item"></ul>
+        <h3 class="page__section-title">Сделай свой выбор</h3>
+        <ul class="page__section-list places__list"></ul>
       </section>
       <section class="page__gallery-section">
         <h3 class="page__section-title">Познакомьтесь ближе</h3>
         <ul class="gallery">
           <li class="gallery-item-one">
-            <img src="images/bag_close.jpeg" alt="" class="gallery-image" />
+            <img src="<%=require('../images/bag_close.jpeg')%>" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item-two">
-            <img src="images/bag_girl.jpeg" alt="" class="gallery-image" />
+            <img src="<%=require('../images/bag_girl.jpeg')%>" alt="" class="gallery-image" />
           </li>
           <li class="gallery-item-three">
             <img
-              src="images/bag_girl_tshirt.jpeg"
+              src="<%=require('../images/bag_girl_tshirt.jpeg')%>"
               alt=""
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-four">
             <img
-              src="images/bag_close_hands.jpeg"
+              src="<%=require('../images/bag_close_hands.jpeg')%>"
               alt=""
               class="gallery-image"
             />
@@ -129,21 +116,11 @@
           <div class="page__product-reviews-rating">
             <p class="product-rating">4.9</p>
             <div class="star-box">
-              <svg viewBox="0 0 50 50" class="star-icon">
-                <use href="./svg/star.svg#star"></use>
-              </svg>
-              <svg viewBox="0 0 50 50" class="star-icon">
-                <use href="./svg/star.svg#star"></use>
-              </svg>
-              <svg viewBox="0 0 50 50" class="star-icon">
-                <use href="./svg/star.svg#star"></use>
-              </svg>
-              <svg viewBox="0 0 50 50" class="star-icon">
-                <use href="./svg/star.svg#star"></use>
-              </svg>
-              <svg viewBox="0 0 50 50" class="star-icon">
-                <use href="./svg/star.svg#star"></use>
-              </svg>
+              <img src="<%= require('../images/star.png') %>" alt="" class="star-icon">
+              <img src="<%= require('../images/star.png') %>" alt="" class="star-icon">
+              <img src="<%= require('../images/star.png') %>" alt="" class="star-icon">
+              <img src="<%= require('../images/star.png') %>" alt="" class="star-icon">
+              <img src="<%= require('../images/star.png') %>" alt="" class="star-icon">
             </div>
           </div>
         </div>
@@ -191,7 +168,7 @@
     </div>
 
     <template id="card-template">
-      <li class="cards-section__list-item">
+      <li class="cards-section__list-item places__item">
         <article class="card">
           <div class="card__top">
             <img src="" alt="" class="card__picture" />
@@ -210,11 +187,6 @@
         </article>
       </li>
     </template>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="components/script.js"></script>
-    <script src="components/cards.js"></script>
-    <script src="components/card.js"></script>
 
   </body>
 </html>

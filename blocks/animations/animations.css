@@ -68,3 +68,11 @@
     opacity: 1; /* Полная прозрачность */
   }
 }
+
+.card {
+  transition: box-shadow .5s ease;
+}
+
+.card:not(:hover){
+  transition: box-shadow .5s ease;
+}

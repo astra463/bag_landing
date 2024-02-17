@@ -1,0 +1,9 @@
+.star-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.star-icon {
+  width: 50px;
+}

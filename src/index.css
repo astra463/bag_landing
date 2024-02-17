@@ -1,0 +1,15 @@
+@import url('../blocks/globals/globals.css');
+@import url('../blocks/globals/variables.css');
+@import url('../blocks/globals/themes.css');
+@import url('../fonts/fonts.css');
+@import url('../blocks/page/button.css');
+@import url('../blocks/animations/animations.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/header__action-button.css');
+@import url('../blocks/card/card.css');
+@import url('../blocks/cards_section/cards_section.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/gallery/gallery-section.css');
+@import url('../blocks/product-reviews/product-reviews.css');
+

@@ -1,0 +1,77 @@
+.card {
+  min-width: calc(33.33% - 40px); /* Вычисляем ширину для трех карточек с учетом промежутков */
+  max-width: 350px;
+  max-height: 450px;
+  background-color: white;
+  box-shadow: 0px 1px 12px 2px rgba(36, 36, 36, 0.07);
+  border-radius: 20px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 32px 6px rgba(36, 36, 36, 0.14);
+}
+
+.card__bottom {
+  padding-top: 34px;
+  display: flex;
+  padding-left: 14px;
+  padding-bottom: 56px;
+}
+
+.card__category {
+  padding-bottom: 4px;
+  color: #afaeae;
+  font-family: Inter-Variable;
+  font-size: 12px;
+  font-style: normal;
+  font-variation-settings: "wght" 700;
+  line-height: normal;
+}
+
+.card__item-number {
+  padding-bottom: 10px;
+  color: #000;
+  font-family: Inter-Variable;
+  font-size: 14px;
+  font-style: normal;
+  font-variation-settings: "wght" 700;
+  line-height: normal;
+}
+
+.card__item-description {
+  color: #afaeae;
+  font-family: Inter-Variable;
+  font-size: 12px;
+  font-style: normal;
+  font-variation-settings: "wght" 400;
+  line-height: normal;
+}
+
+.card__picture {
+  object-fit: cover;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 15px;
+}
+
+.card__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.card__button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card__button-one {
+  background-color: black;
+}
+
+.card__button-two {
+  background-color: brown;
+}
