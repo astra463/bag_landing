@@ -1,0 +1,152 @@
+.page-product {
+  margin: 60px;
+}
+
+.page-product-content {
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  margin: 0;
+}
+
+.back-link {
+  position: relative;
+  top: 30px;
+  left: 60px;
+  font-family: var(--open-sans);
+  font-size: 18px;
+  color: var(--main-color);
+  opacity: 0.6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-product .splide {
+  width: 100%;
+  align-self: baseline;
+  grid-row: 1 / 3;
+}
+
+.product-specifications {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.product-desc {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.btn-list {
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.select-color-block {
+  font-family: var(--open-sans);
+  font-size: 14px;
+  font-weight: bold;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-color-btn {
+  background-position: center;
+  background-size: cover;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid var(--accent-color);
+  cursor: default;
+}
+
+.select-color-btn:not(.active):hover {
+  transform: scale(1.05); 
+  transition: transform 0.1s; 
+}
+
+.select-color-btn.active {
+  transition: none; 
+}
+
+.black {
+  background-color: var(--bg-color);
+}
+
+.brown {
+  background-color: rgb(105 25 25);
+}
+
+@media (width < 1050px) {
+
+  .page-product-content {
+    gap: 20px;
+  }
+
+  .product-specifications {
+    padding: 0;
+  }
+}
+
+@media (width < 1000px) {
+
+  .page-product {
+    margin: 40px;
+  }
+
+  .page-product-content {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .page-product .splide {
+    align-self: center;
+    max-width: 400px;
+    order: 1;
+  }
+
+  .product-desc {
+    order: 2;
+  }
+
+  .product-specifications {
+    order: 0;
+  }
+
+  .select-color-block {
+    text-align: center;
+    align-self: center;
+  }
+
+}
+
+@media (width < 400px) {
+
+  .page-product {
+    margin: 20px;
+  }
+  
+  .product-desc {
+    width: 100%;
+  }
+
+  .back-link {
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .product-specifications {
+    font-size: 22px;
+  }
+
+}

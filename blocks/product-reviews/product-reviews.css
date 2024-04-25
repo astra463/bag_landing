@@ -1,4 +1,4 @@
-@import url('star-icon.css');
+@import url(star-icon.css);
 
 .page__product-reviews {
   display: grid;
@@ -34,8 +34,8 @@
 
 .faq__title {
   padding: 20px 30px 80px;
-  color: #fefefe;
-  font-family: Inter-Variable;
+  color: var(--main-color);
+  font-family: var(--inter);
   font-size: clamp(6.25rem, -0.852rem + 11.364vw, 9.375rem);
   font-variation-settings: "wght" 700;
   text-wrap: nowrap;
@@ -43,8 +43,8 @@
 
 .product-rating,
 .product-paragraph {
-  color: #fff;
-  font-family: Inter-Variable;
+  color: var(--main-color);
+  font-family: var(--inter);
   text-align: center;
   font-variation-settings: "wght" 700;
 }
@@ -65,8 +65,8 @@
   width: 100%;
   background: linear-gradient(
       to bottom,
-      rgb(0 0 0) 0%,
-      rgb(0 0 0) 10%,
+      rgb(19 19 19) 0%,
+      rgb(19 19 19) 10%,
       rgb(0 0 0 / 0) 50.71%
     ),
     linear-gradient(
@@ -76,12 +76,12 @@
       #7c008c 32%,
       #a0008a 45%,
       #bf0086 60%,
-      #db0080 80%,
-      #000 80%
+      #db0080 80%
     );
   background-repeat: no-repeat;
   background-position: top, bottom; /* Расположение градиентов */
 }
+
 
 .bold {
   padding-bottom: 10px;
@@ -108,8 +108,8 @@
   .section__group {
     background: linear-gradient(
         to bottom,
-        rgb(0 0 0) 0%,
-        rgb(0 0 0) 10%,
+        rgb(19 19 19) 0%,
+        rgb(19 19 19) 10%,
         rgb(0 0 0 / 0) 50.71%
       ),
       linear-gradient(
@@ -120,7 +120,7 @@
         #a0008a 45%,
         #bf0086 60%,
         #db0080 75%,
-        #000 75%
+        var(--bg-color) 75%
       );
   }
 
@@ -136,7 +136,7 @@
   margin: 10px;
   border: none;
   padding: 22px 45px;
-  color: #fff;
+  color: var(--main-color);
   font-family: Inter-Variable;
   font-size: 1.7rem;
   text-align: center;
@@ -160,7 +160,7 @@
 }
 
 .faq {
-  color: black;
+  color: var(--bg-color);
 }
 
 details {
@@ -191,6 +191,8 @@ details[open] {
 .copy {
   font-size: 12px;
   text-align: center;
+  background-color: var(--bg-color);
+  color: #fefefe;
 }
 
 @media (width < 600px) {
@@ -225,8 +227,8 @@ details[open] {
   .section__group {
     background: linear-gradient(
         to bottom,
-        rgb(0 0 0) 0%,
-        rgb(0 0 0) 10%,
+        rgb(19 19 19) 0%,
+        rgb(19 19 19) 10%,
         rgb(0 0 0 / 0) 50.71%
       ),
       linear-gradient(
@@ -237,7 +239,7 @@ details[open] {
         #a0008a 45%,
         #bf0086 55%,
         #db0080 55%,
-        #000 55%
+        var(--bg-color) 55%
       );
   }
 }

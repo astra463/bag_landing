@@ -1,9 +1,12 @@
-import "../src/index.css"; // добавьте импорт главного файла стилей
-
+import "../src/index.css";
+import "@splidejs/splide/css";
+import Splide from "@splidejs/splide";
 import { cardsData } from "./components/cards.js";
 import { createCard } from "./components/card.js";
+import { swiper } from "./components/swiper.js";
 
 const cardsContainer = document.querySelector(".places__list");
+const splides = [];
 
 cardsData.forEach((card) => {
   cardsContainer.append(createCard(card));
@@ -56,4 +59,44 @@ document.querySelectorAll(".faq details").forEach((item) => {
   });
 });
 
+const elms = document.getElementsByClassName("splide");
 
+for (let i = 0; i < elms.length; i++) {
+  const splide = new Splide(elms[i]);
+  splide.mount();
+  splides.push(splide);
+  elms[i].addEventListener("click", handleClickEvent);
+}
+
+function handleClickEvent(e) {
+  // Проверяем, является ли элемент, на который произошел клик, стрелкой слайдера
+  if (e.target.closest(".splide__arrow")) {
+    return;
+  }
+
+  if (e.target.closest(".cards-section__list-item")) {
+    const productIndex = e.target.closest(".cards-section__list-item").dataset
+      .productIndex;
+    window.location.href = `product_page.html?productIndex=${productIndex}`;
+  }
+}
+
+// Обработчик события для кнопок выбора цвета
+const colorButtons = document.querySelectorAll(".select-color-btn");
+colorButtons.forEach((btn) => {
+  btn.addEventListener("click", function (evt) {
+    colorButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+
+    if (evt.target.classList.contains("brown")) {
+      if (splides.length > 0) {
+        splides[0].go(4);
+      }
+    } else if (evt.target.classList.contains("black")) {
+      if (splides.length > 0) {
+        splides[0].go(0);
+      }
+    }
+  });
+});

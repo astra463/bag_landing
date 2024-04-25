@@ -23,7 +23,7 @@
 }
 
 .button:hover .button__text {
-  color: var(--button-text-color);
+  color: var(--main-color);
 }
 
 .page__section-title::after {
@@ -47,6 +47,10 @@
 }
 
 .header__menu__list {
+  animation: blink 1s 1s 1 forwards;
+}
+
+.swiper {
   animation: blink 1s 1s 1 forwards;
 }
 

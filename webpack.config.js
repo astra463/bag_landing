@@ -5,35 +5,33 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 const CopyPlugin = require("copy-webpack-plugin");
 
-
-
 module.exports = {
-  entry: { main: "./src/index.js" },
+  entry: { 
+    main: "./src/index.js",
+    productPage: "./src/components/product_page.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "[name].js", 
     publicPath: "",
   },
   mode: 'development',
   devServer: {
-    static: [
-      { directory: path.resolve(__dirname, './dist') }, // путь к dist
-      { directory: path.resolve(__dirname, './svg') }, // путь к вашим SVG файлам
-    ],
+    static: {
+      directory: path.join(__dirname, 'dist'), // указываем папку, где содержатся HTML файлы
+    },
     compress: true, // это ускорит загрузку в режиме разработки
     port: 8080, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
-
     open: true // сайт будет открываться сам при запуске npm run dev
   },
+  
   module: {
     rules: [ // rules — это массив правил
       // добавим в него объект правил для бабеля
       {
         // регулярное выражение, которое ищет все js файлы
         test: /\.js$/,
-        // при обработке этих файлов нужно использовать babel-loader
         use: 'babel-loader',
-        // исключает папку node_modules, файлы в ней обрабатывать не нужно
         exclude: '/node_modules/'
       },
       {
@@ -56,7 +54,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html' // путь к файлу index.html
+      template: './src/index.html', 
+      chunks: ['main'] // указываем, что должен быть подключен только скрипт main.js
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'product_page.html',
+      template: './src/pages/product_page.html', 
+      chunks: ['productPage'] // указываем, что должен быть подключен только скрипт classicPlus.js
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
@@ -69,5 +73,3 @@ module.exports = {
   ]  // добавьте массив
 
 };
-
-// переписали точку выхода, используя утилиту path

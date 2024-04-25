@@ -1,5 +1,10 @@
 :root {
     --main-font: "Rubik-Variable", sans-serif;
-    --bg-color: #fff;
+    --open-sans: 'OpenSans-Variable', sans-serif;
+    --inter: 'Inter-Variable', sans-serif;
+    --abhaya: 'AbhayaLibre', sans-serif;
+    --bg-color: #131313;
+    --accent-color: #FFA000;
+    --main-color: #f5f5f5;
   }
   

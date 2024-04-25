@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сумка "Бочонок"</title>
+  </head>
+  <body>
+    <header class="header-product" id="section_main">
+      <a href="index.html" class="logo-link">
+        <img
+        src="<%=require('../../images/logo.png')%>"
+        alt=""
+        class="header-product-logo"
+      />
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu__list">
+          <li class="header__menu__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__menu__list-item">
+            <a href="#section_models">Модели</a>
+          </li>
+          <li class="header__menu__list-item">
+            <a href="#section_faq">Вопрос/Ответ</a>
+          </li>
+          <li class="header__menu__list-item">
+            <a href="#section_contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <a href="index.html" class="back-link">← на главную</a>
+    <main class="page-product">
+      <section class="page-product-content">
+        <div class="splide" aria-labelledby="carousel-heading">
+          <div class="splide__track">
+            <ul class="splide__list">
+            </ul>
+          </div>
+        </div>
+        <h5 class="product-specifications"></h5>
+        <div class="product-desc">
+          <div class="select-color-block">
+            <p class="color">Цвет</p>
+            <ul class="btn-list">
+              <li class="button-element">
+                <button
+                  class="select-color-btn black active"
+                  title="Выбрать черный цвет"
+                ></button>
+              </li>
+              <li class="button-element">
+                <button
+                  class="select-color-btn brown"
+                  title="Выбрать коричневый цвет"
+                ></button>
+              </li>
+            </ul>
+          </div>
+
+          <p class="product-description-text">
+            Cтильная дорожная сумка от бренда «REVOLDI» идеальна для путешествий
+            и повседневного использования. Изготовлена из качественной экокожи,
+            устойчива к износу и долговечна. <br /><br />
+            Предусмотрены длинный ремень для удобной носки через плечо и
+            короткие ручки для носки в руке. Она компактна и вместительна,
+            подходит для поездок любого вида транспорта. Оснащена замком-молнией
+            для безопасности вещей. Несмотря на большую вместительность, сумка
+            легкая.
+            <br /><br />Подходит для различных сезонов и ситуаций, станет
+            отличным подарком для любимых!
+          </p>
+          <div class="product-data">
+            <table class="table">
+              <tr>
+                <td class="parameter">Цвет</td>
+                <td class="parameter-color-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Материал</td>
+                <td class="parameter-material-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Внешние размеры, см</td>
+                <td class="parameter-size-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Внутри</td>
+                <td class="parameter-inside-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Снаружи</td>
+                <td class="parameter-outside-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Дно</td>
+                <td class="parameter-bottom-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Ремень</td>
+                <td class="parameter-stripe-value"></td>
+              </tr>
+              <tr>
+                <td class="parameter">Вес, грамм</td>
+                <td class="parameter-weight-value"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="section_contacts">
+      <h2 class="footer__title">revoldi</h2>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item bold">Меню</li>
+        <li class="footer__menu-list-item">Главная</li>
+        <li class="footer__menu-list-item">Модели</li>
+        <li class="footer__menu-list-item">Вопрос/Ответ</li>
+        <li class="footer__menu-list-item">Контакты</li>
+      </ul>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item bold">Информация</li>
+        <li class="footer__menu-list-item">Условия возврата</li>
+        <li class="footer__menu-list-item">Инфо</li>
+        <li class="footer__menu-list-item">Инфо/Ответ</li>
+        <li class="footer__menu-list-item">Инфо</li>
+      </ul>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item bold">Контакты</li>
+        <li class="footer__menu-list-item">Условия возврата</li>
+        <li class="footer__menu-list-item">Инфо</li>
+        <li class="footer__menu-list-item">Инфо</li>
+        <li class="footer__menu-list-item">Инфо</li>
+      </ul>
+      <ul class="footer__social-list">
+        <li class="footer__menu-list-item bold">Мы есть здесь</li>
+        <li class="footer__social-icon">Контакты</li>
+        <li class="footer__social-icon">Условия возврата</li>
+        <li class="footer__social-icon">Инфо</li>
+      </ul>
+    </footer>
+    <p class="copy">© 2024 SHILOV x REVOLDI</p>
+  </body>
+</html>

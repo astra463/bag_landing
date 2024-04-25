@@ -11,10 +11,7 @@
 
 body {
   margin: 0;
-}
-
-section {
-  margin: 0 30px;
+  background-color: var(--bg-color);
 }
 
 h1,
