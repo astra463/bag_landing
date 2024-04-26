@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         // регулярное выражение, которое ищет все файлы с такими расширениями
-        test: /\.(png|jpg|svg|jpeg|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(png|jpg|webp|svg|jpeg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource'
       },
       {
@@ -50,6 +50,7 @@ module.exports = {
         },
       'postcss-loader']
       },
+      
       ]
   },
   plugins: [
@@ -60,7 +61,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'product_page.html',
       template: './src/pages/product_page.html', 
-      chunks: ['productPage'] // указываем, что должен быть подключен только скрипт classicPlus.js
+      chunks: ['productPage']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
@@ -69,7 +70,6 @@ module.exports = {
         { from: "svg", to: "svg" }, // Копирование файлов из src/svg в dist/svg
       ],
     }),
-    // использовали плагин
-  ]  // добавьте массив
+]  
 
 };

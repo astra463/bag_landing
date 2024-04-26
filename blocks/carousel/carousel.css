@@ -31,7 +31,6 @@
   padding-top: 3.125rem;
   grid-row: 2;
   align-self: center;
-  opacity: 0;
 }
 
 .swiper-pagination-bullet,
@@ -50,6 +49,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: self-start;
+}
+
+.swiper-slide img{
+  width: 100%;
 }
 
 .swiper-slide h2 {
@@ -98,28 +101,23 @@
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%),
-    url(../../images/carousel-1.jpg) no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%),
-    url(../../images/carousel-2.jpg) no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%),
-    url(../../images/carousel-3.jpg) no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%),
-    url(../../images/carousel-4.jpg) no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%),
-    url(../../images/carousel-5.jpg) no-repeat 50% 50% / cover;
+  background: linear-gradient(to top, #0f202795 0%, #203a4300 10%, #2c536400 25%) no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,

@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     let windowBottom = window.pageYOffset + window.innerHeight;
 
+
     let sectionTitles = document.querySelectorAll(".page__section-title");
     sectionTitles.forEach(function (title) {
       let objectBottom = title.offsetTop + title.offsetHeight;

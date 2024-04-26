@@ -5,9 +5,13 @@ import { cardsData } from "./cards";
 import { fillCarousel } from "./modules";
 
 const splides = [];
-
+let metaDescription = document.querySelector('meta[name="description"]');
+if (metaDescription) {
+    metaDescription.setAttribute("content", "Надёжные и стильные дорожные сумки из премиум экокожи от 1900 рублей. Бесплатная доставка по всей РФ. Более 3600 положительных отзывов");
+}
 
 document.addEventListener("DOMContentLoaded", function () {
+
 
   const itemName = document.querySelector(".product-specifications");
   const table = document.querySelector(".table");
@@ -23,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const product = cardsData[urlParams.get("productIndex")];
 
+
   fillCarousel(product, document.querySelector(".page-product-content"));
 
   const elms = document.getElementsByClassName("splide");
@@ -33,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function fillProductInfo(product) {
-    document.title = product.itemName;
+    document.title = `Прочная и долговечная ${String(product.itemName).toLowerCase()} от 1900 рублей, премиум экокожа`;
     itemName.textContent = product.itemName;
     color.textContent = product.color;
     material.textContent = product.material;

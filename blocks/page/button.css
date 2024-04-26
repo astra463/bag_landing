@@ -8,7 +8,6 @@
 .button {
   position: relative;
   padding: 20px 40px;
-  opacity: 0;
   font-family: var(--open-sans);
   font-weight: 400;
   font-size: 20px;

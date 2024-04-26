@@ -2,10 +2,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.button {
-  animation: blink 1s 1.4s 1 forwards;
-}
-
 .button::after {
   transition: transform 0.3s ease-in-out;
 }
@@ -40,37 +36,6 @@
 
 .animate-underline::after {
   width: 80%;
-}
-
-.header::after {
-  animation: blink 1s .8s 1 forwards;
-}
-
-.header__menu__list {
-  animation: blink 1s 1s 1 forwards;
-}
-
-.swiper {
-  animation: blink 1s 1s 1 forwards;
-}
-
-.header__title {
-  animation: blink 1s 1s 1 forwards;
-}
-
-.header__description {
-  animation: blink 1s 1.2s 1 forwards;
-}
-
-@keyframes blink {
-
-  0% {
-    opacity: 0; /* Полная видимость */
-  }
-
-  100% {
-    opacity: 1; /* Полная прозрачность */
-  }
 }
 
 .card {

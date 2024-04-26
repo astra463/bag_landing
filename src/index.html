@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Сумки REVOLDI" />
+    <meta property="og:title" content="Надёжные и стильные дорожные сумки из премиум экокожи " />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://4.downloader.disk.yandex.ru/preview/bdcab4fb936146f5667187e5b4c5451db46b1350e745a6605b2f49cd5e26d8f5/inf/vo57p6i0wUI6Hg7OrxzA62lO1UX4h3sZmEoWVTLTwVoFi9aMG8kdalXhg3yNbptTV6_riuUnvVsi8wIB-vyQIw%3D%3D?uid=158869645&filename=og-picture.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=158869645&tknv=v2&size=2784x1428" />
-    <meta property="og:url" content="URL_вашей_страницы" />
+    <meta property="og:image" content="https://револди.рф/og-picture.png"/>
+    <meta property="og:url" content="https://револди.рф" />
     <meta
       property="og:description"
       content="
-      Cтильные дорожные сумки для путешествий
-      и повседневного использования из качественной экокожи"
+      Надёжные и стильные дорожные сумки из премиум экокожи от 1900 рублей. Бесплатная доставка по всей РФ. Более 3600 положительных отзывов"
     />
     <meta property="og:site_name" content="REVOLDI" />
     <meta property="og:locale" content="РФ" />
 
-    <title>Revoldi</title>
+    <title>Дорожные сумки из премиум экокожи для поездок, спорта и путешествий от 1900 рублей</title>
+    <meta name="description" content="Надёжные и стильные дорожные сумки из премиум экокожи от 1900 рублей. Бесплатная доставка по всей РФ. Более 3600 положительных отзывов" />
+    <meta name="keywords" content="дорожные сумки, сумки в дорогу, дорожная сумка, дорожная смка, смука дорожная, купить дорожную сумку" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Language" content="ru">
     <link rel="icon" href="svg/letter-r-svgrepo-com.ico" sizes="any" />
     <link rel="icon" href="svg/letter-r-svgrepo-com.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="images/mobile-icon.png" />
   </head>
   <body>
     <header class="header" id="section_main">
@@ -54,16 +56,30 @@
       </div>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--one"></div>
-          <div class="swiper-slide swiper-slide--two"></div>
-          <div class="swiper-slide swiper-slide--three"></div>
-          <div class="swiper-slide swiper-slide--four"></div>
-          <div class="swiper-slide swiper-slide--five"></div>
+          <div class="swiper-slide swiper-slide--one">
+            <img src="<%=require('../images/carousel-1.webp')%>" alt="Первое изображание слайдера - пара мужчина и женщина держат сумки для ручной клади в руках"/>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <img src="<%=require('../images/carousel-2.webp')%>" alt="Второе фото слайдера - пара мужчина и женщина держат сумки классика в руках" loading="lazy" />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-slide--three">
+            <img src="<%=require('../images/carousel-3.webp')%>" alt="Третье фото слайдера - пара мужчина и женщина держат сумки саквояж в руках" loading="lazy" />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-slide--four">
+            <img src="<%=require('../images/carousel-4.webp')%>" alt="Четвертое фото слайдера - пара мужчина и женщина держат сумки спорт в руках" loading="lazy" />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-slide--five">
+            <img src="<%=require('../images/carousel-5.webp')%>" alt="Пятое фото слайдера - пара мужчина и женщина держат сумки дипломат в руках" loading="lazy" />
+            <div class="swiper-lazy-preloader"></div>
+          </div>
         </div>
       </div>
     </header>
     <main class="page">
-      <section class="page__section">
+      <section class="page__section" id="section_models">
         <h3 class="page__section-title">Сделай свой выбор</h3>
         <ul class="page__section-list places__list"></ul>
       </section>
@@ -71,89 +87,87 @@
         <h3 class="page__section-title">Познакомьтесь ближе</h3>
         <ul class="gallery">
           <li class="gallery-item-one">
-            <img
-              src="<%=require('../images/gallery1.jpg')%>"
-              alt=""
+            <img loading="lazy"
+              src="<%=require('../images/gallery1.webp')%>"
+              alt="Фото женщины в белой майке и солнечных очках, которая держит сумку"
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-two">
-            <img
-              src="<%=require('../images/gallery2.jpg')%>"
-              alt=""
+            <img loading="lazy"
+              src="<%=require('../images/gallery2.webp')%>"
+              alt="Фото женщины в белой рубашке и солнечных очках, которая складывает вещи в сумку"
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-three">
-            <img
-            src="<%=require('../images/gallery3.jpg')%>"
-            alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery3.webp')%>"
+            alt="Фото женщины в бежевом плаще, которая держит сумку перед собой"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-four">
-            <img
-            src="<%=require('../images/gallery4.jpg')%>"
-            alt=""
+            <img loading="lazy"
+            src="<%=require('../images/gallery4.webp')%>"
+            alt="Фото сумки крупным планом, которую держит мужчина"
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-five">
-            <img
-              src="<%=require('../images/gallery5.jpg')%>"
-              alt=""
+            <img loading="lazy"
+              src="<%=require('../images/gallery5.webp')%>"
+              alt="Фото сумки крупным планом, которую держит мужчина"
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-six">
-            <img
-              src="<%=require('../images/gallery6.jpg')%>"
-              alt=""
+            <img loading="lazy"
+              src="<%=require('../images/gallery6.webp')%>"
+              alt="Фото женщины в кожаной куртке со спины, которая держит сумку за плечом"
               class="gallery-image"
             />
           </li>
           <li class="gallery-item-seven">
-            <img
-            src="<%=require('../images/gallery7.jpg')%>"
-            alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery7.webp')%>"
+            alt="Фото сумки крупным планом, которую держит мужчина"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-eight">
-            <img
-            src="<%=require('../images/gallery8.jpg')%>"
-            alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery8.webp')%>"
+            alt="Фото крупным планом, где сумку застегивают"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-nine">
-            <img
-            src="<%=require('../images/gallery10.jpg')%>"
-
-              alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery10.webp')%>"
+            alt="Фото сумки крупным планом, которую держит мужчина"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-ten">
-            <img
-            src="<%=require('../images/gallery9.jpg')%>"
-
-              alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery9.webp')%>"
+            alt="Фото женщины в рубашке, которая держит сумку за плечом"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-eleven">
-            <img
-            src="<%=require('../images/gallery11.jpg')%>"
-            alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery11.webp')%>"
+            alt="Фото сумки крупным планом, которую держит мужчина"
+            class="gallery-image"
             />
           </li>
           <li class="gallery-item-tvelwe">
-            <img
-            src="<%=require('../images/gallery12.jpg')%>"
-            alt=""
-              class="gallery-image"
+            <img loading="lazy"
+            src="<%=require('../images/gallery12.webp')%>"
+            alt="Фото сумки крупным планом, которую держит мужчина за плечом"
+            class="gallery-image"
             />
           </li>
         </ul>
@@ -192,29 +206,29 @@
           <div class="page__product-reviews-rating">
             <p class="product-rating">4.9</p>
             <div class="star-box">
-              <img
-                src="<%= require('../images/star.png') %>"
-                alt=""
+              <img loading="lazy"
+                src="<%= require('../images/star.webp') %>"
+                alt="просто картинка звёздочки"
                 class="star-icon"
               />
-              <img
-                src="<%= require('../images/star.png') %>"
-                alt=""
+              <img loading="lazy"
+                src="<%= require('../images/star.webp') %>"
+                alt="просто картинка звёздочки"
                 class="star-icon"
               />
-              <img
-                src="<%= require('../images/star.png') %>"
-                alt=""
+              <img loading="lazy"
+                src="<%= require('../images/star.webp') %>"
+                alt="просто картинка звёздочки"
                 class="star-icon"
               />
-              <img
-                src="<%= require('../images/star.png') %>"
-                alt=""
+              <img loading="lazy"
+                src="<%= require('../images/star.webp') %>"
+                alt="просто картинка звёздочки"
                 class="star-icon"
               />
-              <img
-                src="<%= require('../images/star.png') %>"
-                alt=""
+              <img loading="lazy"
+                src="<%= require('../images/star.webp') %>"
+                alt="просто картинка звёздочки"
                 class="star-icon"
               />
             </div>
@@ -260,7 +274,7 @@
           <li class="footer__social-icon">Инфо</li>
         </ul>
       </footer>
-      <p class="copy">&copy; 2024 SHILOV x REVOLDI</p>
+      <p id="copyright" class="copy">&copy; 2024 Shilov x Revoldi</p>
     </div>
   </body>
   <template id="card-template">
@@ -285,8 +299,8 @@
             </div>
           </div>
           <div class="card__buttons">
-            <button class="card__button select-color-btn black active"></button>
-            <button class="card__button select-color-btn brown"></button>
+            <button name="choose-color" class="card__button select-color-btn black active"></button>
+            <button name="choose-color" class="card__button select-color-btn brown"></button>
           </div>
         </div>
       </article>

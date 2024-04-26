@@ -8,7 +8,7 @@ const createCard = (cardData) => {
   const cardParameters = cardElement.querySelector(".card__parameters");
   const cardCategory = cardElement.querySelector(".card__category");
 
-  fillCarousel(cardData, cardElement, [0,1,2,3,13,14,15,16]);
+  fillCarousel(cardData, cardElement, [0,1,2,3,14,15,16,17]);
 
   cardElement.dataset.category = cardData.category;
   cardElement.dataset.productIndex = currentIndex++;
