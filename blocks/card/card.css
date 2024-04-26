@@ -82,10 +82,6 @@
 
 @media (width < 1000px) {
 
-  .card {
-    max-width: 315px;
-  }
-
   .card__picture {
     max-height: 300px;
   }

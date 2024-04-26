@@ -58,8 +58,8 @@
 .select-color-btn {
   background-position: center;
   background-size: cover;
-  border: none;
   width: 40px;
+  border: 1px solid var(--main-color);
   height: 40px;
   cursor: pointer;
 }
@@ -147,6 +147,13 @@
 
   .product-specifications {
     font-size: 22px;
+  }
+
+  .product-description-text {
+    outline: 2px dotted var(--main-color);
+    padding: 10px;
+    outline-offset: 10px;
+    border: none;
   }
 
 }

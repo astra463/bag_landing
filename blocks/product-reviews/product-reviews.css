@@ -188,13 +188,6 @@ details[open] {
   font-size: 30px;
 }
 
-.copy {
-  font-size: 12px;
-  text-align: center;
-  background-color: var(--bg-color);
-  color: #fefefe;
-}
-
 @media (width < 600px) {
 
   .faq__title {

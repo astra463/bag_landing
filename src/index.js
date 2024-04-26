@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     let windowBottom = window.pageYOffset + window.innerHeight;
 
-
     let sectionTitles = document.querySelectorAll(".page__section-title");
     sectionTitles.forEach(function (title) {
       let objectBottom = title.offsetTop + title.offsetHeight;
@@ -89,14 +88,20 @@ colorButtons.forEach((btn) => {
     colorButtons.forEach((button) => {
       button.classList.remove("active");
     });
-
-    if (evt.target.classList.contains("brown")) {
-      if (splides.length > 0) {
-        splides[0].go(4);
-      }
-    } else if (evt.target.classList.contains("black")) {
-      if (splides.length > 0) {
-        splides[0].go(0);
+    const card = evt.target.closest(".cards-section__list-item");
+    if (card) {
+      const splideElement = card.querySelector(".splide");
+      const splideId = splideElement.id.match(/\d+/);
+      if (splideElement) {
+        if (evt.target.classList.contains("brown")) {
+          if (splides.length > 0) {
+            splides[splideId - 1].go(4);
+          }
+        } else if (evt.target.classList.contains("black")) {
+          if (splides.length > 0) {
+            splides[splideId - 1].go(0);
+          }
+        }
       }
     }
   });

@@ -5,8 +5,9 @@
   justify-content: space-between;
   min-height: 360px;
   padding: 132px 32px 32px;
-  background-color: var(--bg-color);
-  border-top: 2px solid var(--main-color);
+  background-image: linear-gradient(to bottom, rgb(19, 19, 19) 0%,#52008c 100%);
+  background-size: cover;
+    border-top: 2px solid var(--main-color);
 }
 
 .footer__title {
@@ -28,6 +29,14 @@
   font-family: Rubik-Variable;
   font-size: 18px;
   font-variation-settings: "wght" 400;
+}
+
+
+.copy {
+  font-size: 12px;
+  text-align: center;
+  color: var(--main-color);
+  background-color: #52008c;
 }
 
 @media (width < 1000px) {
