@@ -6,6 +6,7 @@ import { createCard } from "./components/card.js";
 import { swiper } from "./components/swiper.js";
 
 const cardsContainer = document.querySelector(".places__list");
+const swiperArrows = document.querySelector(".swiper__arrows");
 const splides = [];
 
 cardsData.forEach((card) => {

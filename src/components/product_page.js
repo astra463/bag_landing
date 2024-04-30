@@ -12,7 +12,6 @@ if (metaDescription) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-
   const itemName = document.querySelector(".product-specifications");
   const table = document.querySelector(".table");
   const color = table.querySelector(".parameter-color-value");

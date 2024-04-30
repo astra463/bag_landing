@@ -11,6 +11,10 @@ const swiper = new Swiper(".swiper", {
     modifier: 3,
     slideShadows: true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   keyboard: {
     enabled: true,
   },
