@@ -4,9 +4,9 @@ import Splide from "@splidejs/splide";
 import { cardsData } from "./components/cards.js";
 import { createCard } from "./components/card.js";
 import { swiper } from "./components/swiper.js";
+import { initSplide } from "./components/splideInitializer.js";
 
 const cardsContainer = document.querySelector(".places__list");
-const swiperArrows = document.querySelector(".swiper__arrows");
 const splides = [];
 
 cardsData.forEach((card) => {

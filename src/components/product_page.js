@@ -1,76 +1,73 @@
 import "../../src/index.css";
-import Splide from "@splidejs/splide";
 import "@splidejs/splide/css";
 import { cardsData } from "./cards";
-import { fillCarousel } from "./modules";
+import { initSplide } from "../components/splideInitializer";
 
-const splides = [];
-let metaDescription = document.querySelector('meta[name="description"]');
-if (metaDescription) {
-    metaDescription.setAttribute("content", "Надёжные и стильные дорожные сумки из премиум экокожи от 1900 рублей. Бесплатная доставка по всей РФ. Более 3600 положительных отзывов");
-}
+let selectedColor = "черный"; // По умолчанию выбран черный цвет
+let currentProduct = null;
 
 document.addEventListener("DOMContentLoaded", function () {
+	const itemName = document.querySelector(".product-specifications");
+	const table = document.querySelector(".table");
+	const color = table.querySelector(".parameter-color-value");
+	const material = table.querySelector(".parameter-material-value");
+	const sizes = table.querySelector(".parameter-size-value");
+	const inside = table.querySelector(".parameter-inside-value");
+	const outside = table.querySelector(".parameter-outside-value");
+	const bottom = table.querySelector(".parameter-bottom-value");
+	const stripe = table.querySelector(".parameter-stripe-value");
+	const weight = table.querySelector(".parameter-weight-value");
+	const productLink = document.querySelector(".product_page-button");
 
-  const itemName = document.querySelector(".product-specifications");
-  const table = document.querySelector(".table");
-  const color = table.querySelector(".parameter-color-value");
-  const material = table.querySelector(".parameter-material-value");
-  const sizes = table.querySelector(".parameter-size-value");
-  const inside = table.querySelector(".parameter-inside-value");
-  const outside = table.querySelector(".parameter-outside-value");
-  const bottom = table.querySelector(".parameter-bottom-value");
-  const stripe = table.querySelector(".parameter-stripe-value");
-  const weight = table.querySelector(".parameter-weight-value");
+	const urlParams = new URLSearchParams(window.location.search);
+	const productIndex = urlParams.get("productIndex");
+	currentProduct = cardsData[productIndex];
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const product = cardsData[urlParams.get("productIndex")];
+	// Инициализация слайдера изображений
+	initSplide(currentProduct, selectedColor);
 
+	function fillProductInfo(product) {
+		document.title = `Прочная и долговечная ${String(
+			product.itemName
+		).toLowerCase()} от 1900 рублей, премиум экокожа`;
+		itemName.textContent = product.itemName;
+		color.textContent = product.color;
+		material.textContent = product.material;
+		sizes.textContent = `${product.width} x ${product.height} x ${product.depth} см`;
+		inside.textContent = product.inside;
+		outside.textContent = product.outside;
+		bottom.textContent = product.bottom;
+		stripe.textContent = product.stripe;
+		weight.textContent = product.weight * 1000;
+		productLink.setAttribute("href", product.links.black);
+	}
 
-  fillCarousel(product, document.querySelector(".page-product-content"));
+	// Заполняем информацию о товаре на странице
+	fillProductInfo(currentProduct);
 
-  const elms = document.getElementsByClassName("splide");
-  for (let i = 0; i < elms.length; i++) {
-    const splide = new Splide(elms[i]);
-    splide.mount();
-    splides.push(splide);
-  }
+	// Обработчик события для кнопок выбора цвета
+	const colorButtons = document.querySelectorAll(".select-color-btn");
+	colorButtons.forEach((btn) => {
+		btn.addEventListener("click", function (evt) {
+			// Удаляем активный класс у всех кнопок
+			colorButtons.forEach((button) => {
+				button.classList.remove("active");
+			});
 
-  function fillProductInfo(product) {
-    document.title = `Прочная и долговечная ${String(product.itemName).toLowerCase()} от 1900 рублей, премиум экокожа`;
-    itemName.textContent = product.itemName;
-    color.textContent = product.color;
-    material.textContent = product.material;
-    sizes.textContent = `${product.width} x ${product.height} x ${product.depth} см`;
-    inside.textContent = product.inside;
-    outside.textContent = product.outside;
-    bottom.textContent = product.bottom;
-    stripe.textContent = product.stripe;
-    weight.textContent = product.weight * 1000;
-  }
+			// Добавляем активный класс к нажатой кнопке
+			evt.target.classList.add("active");
 
-  // Заполняем информацию о товаре на странице
-  fillProductInfo(product);
-});
+			// Получаем выбранный цвет из класса кнопки
+			if (evt.target.classList.contains("brown")) {
+				selectedColor = "коричневый";
+				productLink.setAttribute("href", currentProduct.links.brown);
+			} else if (evt.target.classList.contains("black")) {
+				selectedColor = "черный";
+				productLink.setAttribute("href", currentProduct.links.black);
+			}
 
-// Обработчик события для кнопок выбора цвета
-const colorButtons = document.querySelectorAll(".select-color-btn");
-colorButtons.forEach((btn) => {
-  btn.addEventListener("click", function (evt) {
-    colorButtons.forEach((button) => {
-      button.classList.remove("active");
-    });
-
-    evt.target.classList.add("active");
-
-    if (evt.target.classList.contains("brown")) {
-      if (splides.length > 0) {
-        splides[0].go(14);
-      }
-    } else if (evt.target.classList.contains("black")) {
-      if (splides.length > 0) {
-        splides[0].go(0);
-      }
-    }
-  });
+			// Изменяем изображения в слайдере в соответствии с выбранным цветом
+			initSplide(currentProduct, selectedColor);
+		});
+	});
 });

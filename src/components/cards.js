@@ -18,6 +18,10 @@ const cardsData = [
     bottom: "усилено",
     stripe: "регулируемый, длина 90-165 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/208181968/detail.aspx?targetUrl=EX',
+      brown: 'https://www.wildberries.ru/catalog/208182748/detail.aspx?targetUrl=EX'
+    },
     images: [
       'https://револди.рф/images/bag_pictures/bochonok_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/bochonok_black/2-min.jpg',
@@ -65,6 +69,10 @@ const cardsData = [
     bottom: "усилено",
     stripe: "регулируемый, длина 90-165 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/204484677/detail.aspx',
+      brown: 'https://www.wildberries.ru/catalog/204511862/detail.aspx'
+    },
     images: [
       'https://револди.рф/images/bag_pictures/diplomat_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/diplomat_black/2-min.jpg',
@@ -111,6 +119,10 @@ const cardsData = [
     bottom: "усилено",
     stripe: "регулируемый, длина 90-165 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/208180427/detail.aspx?targetUrl=EX',
+      brown: 'https://www.wildberries.ru/catalog/208180602/detail.aspx?targetUrl=EX'
+    },
     images: [
       'https://револди.рф/images/bag_pictures/valise_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/valise_black/2-min.jpg',
@@ -157,6 +169,10 @@ const cardsData = [
     bottom: "усилено",
     stripe: "регулируемый, длина 85-150 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/200039261/detail.aspx',
+      brown: 'https://www.wildberries.ru/catalog/171103015/detail.aspx'
+    },
     images: [
       'https://револди.рф/images/bag_pictures/hand_luggage_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/hand_luggage_black/2-min.jpg',
@@ -203,6 +219,10 @@ const cardsData = [
     bottom: "усилено, имеет ножки",
     stripe: "регулируемый, длина 85-150 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/103142989/detail.aspx',
+      brown: 'https://www.wildberries.ru/catalog/171102759/detail.aspx?targetUrl=EX',
+    },
     images: [
       'https://револди.рф/images/bag_pictures/sport_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/sport_black/2-min.jpg',
@@ -249,6 +269,10 @@ const cardsData = [
     bottom: "усилено, имеет ножки",
     stripe: "регулируемый, длина 85-150 см",
     material: "экокожа",
+    links: {
+      black: 'https://www.wildberries.ru/catalog/137716293/detail.aspx',
+      brown: 'https://www.wildberries.ru/catalog/171103015/detail.aspx'
+    },
     images: [
       'https://револди.рф/images/bag_pictures/classic_black/1-min.jpg',
       'https://револди.рф/images/bag_pictures/classic_black/2-min.jpg',

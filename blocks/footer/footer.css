@@ -1,13 +1,12 @@
 .footer {
   margin-top: 60px;
-  align-items: center;
   display: flex;
   justify-content: space-between;
-  min-height: 360px;
-  padding: 132px 32px 32px;
+  align-items: center;
   background-image: linear-gradient(to bottom, rgb(19, 19, 19) 0%,#52008c 100%);
   background-size: cover;
-    border-top: 2px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
+  padding: 20px;
 }
 
 .footer__title {
@@ -22,13 +21,12 @@
 .footer__menu-list,
 .footer__social-list {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-self: flex-start;
+  gap: 24px;
   color: var(--main-color);
   font-family: Rubik-Variable;
   font-size: 18px;
   font-variation-settings: "wght" 400;
+  align-items: center;
 }
 
 
