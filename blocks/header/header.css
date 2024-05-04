@@ -192,10 +192,6 @@
 		font-variation-settings: "wght" 500;
 	}
 
-	.button::after {
-		background-color: var(--main-color);
-	}
-
 	.header__action-button {
 		background-color: var(--bg-color);
 	}
