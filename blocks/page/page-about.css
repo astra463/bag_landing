@@ -1,5 +1,4 @@
 .about {
-	height: 100vh;
 	margin: 50px;
 }
 
@@ -47,5 +46,18 @@
   font-family: 'AlongSanss2';
 }
 
-.cursive::after {
+@media (width < 800px) {
+
+  .about {
+    margin: 10px;
+  }
+
+  .about-section-title {
+    margin-top: 20px;
+    font-size: 42px;
+  }
+
+  .about-section-description {
+    font-size: 18px;
+  }
 }

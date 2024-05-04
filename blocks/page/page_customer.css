@@ -135,6 +135,7 @@
   .block-description,
   .important {
     font-size: 18px;
+    padding: 2px;
   }
 
   .details_customer,
@@ -149,5 +150,9 @@
 
   .link {
     width: 100%;
+  }
+
+  .attention {
+    font-size: 18px;
   }
 }

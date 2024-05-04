@@ -2,6 +2,12 @@ import "../../src/index.css";
 import "@splidejs/splide/css";
 import { cardsData } from "./cards";
 import { initSplide } from "../components/splideInitializer";
+import burgerMenuController from "./burgerMenuController";
+
+const burgerButton = document.querySelector(".burger_button");
+const burgerMenu = document.querySelector(".header__menu");
+
+burgerMenuController(burgerButton, burgerMenu);
 
 let selectedColor = "черный"; // По умолчанию выбран черный цвет
 let currentProduct = null;
