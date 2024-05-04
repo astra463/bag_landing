@@ -1,0 +1,153 @@
+.page-customer {
+	margin: 50px;
+}
+
+.section-title {
+	margin-bottom: 30px;
+	color: var(--main-color);
+	font-size: 80px;
+	font-weight: 600;
+	font-family: "AlongSanss2";
+}
+
+.wrapper {
+	display: block;
+	border: 2px dotted var(--main-color);
+	height: min-content;
+	padding: 20px;
+	border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.block-title {
+	color: var(--main-color);
+	font-size: 42px;
+	font-weight: 600;
+	font-family: "AlongSanss2";
+}
+
+.block-description {
+	color: var(--main-color);
+	font-family: "OpenSans-Variable";
+	font-size: 24px;
+  margin: 20px 0;
+}
+
+.contacts-links {
+	display: flex;
+	gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+	display: flex;
+	padding: 20px;
+	color: var(--main-color);
+	font-family: "OpenSans-Variable";
+	background-image: linear-gradient(90deg, #7c008c, #db0080 51%, #52008c);
+	border-radius: 20px;
+  font-size: 20px;
+  text-wrap: nowrap;
+	justify-content: center;
+  align-items: center;
+}
+
+.email-link {
+	background-image: linear-gradient(90deg, #ad6f04, #b17f01 51%, #8eaa03);
+}
+
+.messengers-tg-link {
+	background-image: linear-gradient(90deg, #2a03aa, #004b70 51%, #0077ff);
+}
+
+.messengers-whatsapp-link {
+	background-image: linear-gradient(90deg, #008c0c, #06a103 51%, #046816);
+}
+
+.wb-link {
+	background-image: linear-gradient(90deg, #7c008c, #db0080 51%, #52008c);
+}
+
+.email-image {
+	width: 40px;
+	height: 40px;
+  margin: 10px;
+}
+
+.important {
+  color: lightpink;
+  font-size: 24px;
+}
+
+.attention {
+  background-color: yellow;
+  color: var(--bg-color);
+  border-radius: 14px;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.return__paragraph {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.details_customer {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 28px;
+}
+
+.documents-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.documents-link {
+  color: lightskyblue;
+  font-size: 20px;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.documents-link:hover {
+  cursor: pointer;
+}
+
+@media (width < 800px) {
+
+  .page-customer {
+    margin: 10px;
+  }
+
+  .section-title {
+    font-size: 42px;
+    margin-top: 20px;
+  }
+
+  .block-title {
+    font-size: 32px;
+  }
+
+  .block-description,
+  .important {
+    font-size: 18px;
+  }
+
+  .details_customer,
+  .return__paragraph {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .documents-link{
+    font-size: 14px;
+  }
+
+  .link {
+    width: 100%;
+  }
+}

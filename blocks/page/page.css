@@ -7,7 +7,7 @@
   position: relative;
   padding: 50px 0;
   color: var(--main-color);
-  font-family: var(--inter);
+	font-family: 'Evolventa-Regular';
   font-weight: 400;
   font-size: clamp(2.25rem, 0.231rem + 3.077vw, 3rem);
   line-height: 2;
@@ -15,16 +15,15 @@
   text-shadow: 5px 5px 10px rgb(0 0 0 / 0.15); /* Пример тени текста */
 }
 
-.page__section-title::after {
-  content: "";
-  position: absolute;
-  left: 10%;
+.description_pseudo-element::after {
+  content: "нажми на сумку и узнай больше";
+  font-family: Zing;
   display: block;
-  width: 0;
-  height: 3px;
-  border-radius: 25%;
-  opacity: 0.8;
-  background-color: var(--accent-color);
+  font-size: 20px;
+  opacity: 0.9;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
 }
 
 .page__section-picture {
@@ -54,6 +53,10 @@
 
   .page__section-title {
     font-size: clamp(1.5rem, 0.25rem + 5.333vw, 2.25rem);
+  }
+
+  .description_pseudo-element::after {
+    font-size: 14px;
   }
 
 }

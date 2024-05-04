@@ -12,7 +12,7 @@
 .footer__title {
   align-self: flex-start;
   color: var(--main-color);
-  font-family: Inter-Variable;
+  font-family: 'AlongSanss2';
   font-size: clamp(2.5rem, -1.761rem + 6.818vw, 4.375rem);
   text-transform: uppercase;
   font-variation-settings: "wght" 700;
@@ -76,15 +76,9 @@
     text-align: center;
   }
 
-  .footer__menu-list::after {
-    content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: var(--main-color);
-  }
-
   .footer__menu-list {
     font-size: 14px;
+    flex-direction: column;
   }
 
 }

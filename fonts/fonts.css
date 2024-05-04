@@ -31,3 +31,31 @@
   src: local("AbhayaLibre-SemiBold.ttf"),
     url(./AbhayaLibre-SemiBold.ttf) format("truetype");
 }
+
+@font-face {
+  font-display: swap;
+  font-family: Zing;
+  src: local("Zing.ttf"),
+    url(./Zing.ttf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: AlongSanss2;
+  src: local("AlongSanss2.otf"),
+    url(./AlongSanss2.otf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Evolventa-Regular;
+  src: local("Evolventa-Regular.ttf"),
+    url(./Evolventa-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Evolventa-Bold;
+  src: local("Evolventa-Bold.ttf"),
+    url(./Evolventa-Bold.ttf) format("truetype");
+}

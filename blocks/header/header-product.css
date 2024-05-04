@@ -30,10 +30,20 @@
   }
 }
 
-@media (width < 400px) { 
+@media (width < 500px) { 
   
   .header-product {
     flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .header-product-logo {
+    height: 30px;
+  }
+
+  .logo-link {
+    height: min-content;
   }
 
   .header__menu__list {

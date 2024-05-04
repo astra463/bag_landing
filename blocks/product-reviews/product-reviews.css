@@ -231,8 +231,8 @@ details[open] {
         #7c008c 32%,
         #a0008a 45%,
         #bf0086 55%,
-        #db0080 55%,
-        var(--bg-color) 55%
+        #db0080 90%,
+        var(--bg-color) 90%
       );
   }
 }
